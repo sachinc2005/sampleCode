@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Gmail Test"  data-provider-thread-count="5">
+
+	<test name="Sample Test">
+		<classes>
+
+			<class name="com.sample.tests">
+				<methods>
+					<include name="validateLoginPage" />
+					<exclude name="validateLoginPageDataProvider" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>
